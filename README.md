@@ -21,9 +21,9 @@ scikit-learn **chỉ** được dùng để đối chiếu kết quả, không d
 
 | Họ tên | MSSV | Phụ trách |
 |---|---|---|
-| Nguyễn Thị Huệ Giang | 24110014 | Multinomial NB, Random Forest, thí nghiệm độ bền |
+| Nguyễn Thị Huệ Giang | 24110014 | Multinomial NB, Random Forest, xử lý phiếu chữ viết |
 | Lâm Hà Quỳnh Như | 24110043 | Dữ liệu, MLP, thí nghiệm tập Việt |
-| Hồ Việt Thuận Phú | 24110098 | Logistic Regression, `metrics.py`, xử lý phiếu chữ viết, demo |
+| Hồ Việt Thuận Phú | 24110098 | Logistic Regression, `metrics.py`, thí nghiệm độ bền, demo |
 
 Tỷ lệ đóng góp chi tiết nằm trong báo cáo.
 
@@ -155,12 +155,12 @@ Mở địa chỉ hiện trong terminal (mặc định `http://127.0.0.1:7860`),
 
 *(Điền sau khi chạy với `QUICK = False`, `RUN_TEST = True`; số liệu lấy từ `results/summary_final.csv`.)*
 
-| Mô hình | Accuracy test | F1 macro test | Thời gian huấn luyện | Dự đoán (ms/ảnh) |
+| Mô hình | Accuracy test | F1 macro test | Thời gian huấn luyện (s) | Dự đoán (ms/ảnh) |
 |---|---|---|---|---|
-| Multinomial NB | | | | |
-| Logistic Regression | | | | |
-| MLP | | | | |
-| Random Forest | | | | |
+| Multinomial NB | 0.8364 | 0.8261 | 0.2098 | 7.4243 |
+| Logistic Regression | 0.9213 | 0.9197 | 8.4192 | 2.3096 |
+| MLP | 0.9809 | 0.9873 | 32.7940 | 2.1360 |
+| Random Forest | 0.9645 | 0.9744 | 582.7195 | 206.0707 |
 
 ## Kiểm chứng cài đặt
 
@@ -199,7 +199,7 @@ __pycache__/
 
 ## Khai báo sử dụng AI
 
-Nhóm có sử dụng trợ lý AI để hỗ trợ: *(mô tả cụ thể phần nào, ví dụ: giải thích lý thuyết, gợi ý cấu trúc code, sửa lỗi)*. Mọi mã nguồn nộp đều đã được nhóm đọc hiểu, chạy kiểm thử và chịu trách nhiệm. Chi tiết xem mục Phân công trong báo cáo.
+Nhóm có sử dụng trợ lý AI để hỗ trợ: *giải thích lý thuyết, gợi ý cấu trúc code, sửa lỗi*. Mọi mã nguồn nộp đều đã được nhóm đọc hiểu, chạy kiểm thử và chịu trách nhiệm. Chi tiết xem mục Khai báo sử dụng AI trong báo cáo.
 
 ## Tài liệu tham khảo
 
