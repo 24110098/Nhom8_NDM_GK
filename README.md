@@ -10,6 +10,7 @@ Nhóm tự cài đặt (bằng NumPy) và so sánh bốn bộ phân lớp trên 
 | Ensemble | Random Forest (CART, Gini, bootstrap, OOB score) | `src/random_forest.py` |
 
 Phần nâng cao:
+
 - **Bộ chữ số viết tay người Việt** do nhóm tự thu thập, dùng để đo hiện tượng lệch miền (domain shift).
 - **Tăng cường dữ liệu** (xoay, dịch, nhiễu) và thí nghiệm độ bền.
 - **Demo** vẽ chữ số bằng Gradio.
@@ -20,9 +21,9 @@ scikit-learn **chỉ** được dùng để đối chiếu kết quả, không d
 
 | Họ tên | MSSV | Phụ trách |
 |---|---|---|
-| *Nguyễn Thị Huệ Giang* | *24110014* | Multinomial NB, Random Forest, thí nghiệm độ bền |
-| *Lâm Hà Quỳnh Như* | *24110043* | Dữ liệu, MLP, thí nghiệm tập Việt |
-| *Hồ Việt Thuận Phú* | *24110098* | Logistic Regression, `metrics.py`, xử lý phiếu chữ viết, demo |
+| Nguyễn Thị Huệ Giang | 24110014 | Multinomial NB, Random Forest, thí nghiệm độ bền |
+| Lâm Hà Quỳnh Như | 24110043 | Dữ liệu, MLP, thí nghiệm tập Việt |
+| Hồ Việt Thuận Phú | 24110098 | Logistic Regression, `metrics.py`, xử lý phiếu chữ viết, demo |
 
 Tỷ lệ đóng góp chi tiết nằm trong báo cáo.
 
@@ -62,6 +63,7 @@ Yêu cầu Python 3.10 trở lên.
 ```bash
 # 1. Tạo môi trường ảo (khuyên dùng)
 python -m venv .venv
+
 # Windows:
 .venv\Scripts\activate
 # macOS / Linux:
@@ -96,6 +98,7 @@ python src/data.py
 Lệnh này tải MNIST về `data/mnist.npz`. Nếu bỏ qua bước này, notebook cũng tự tải ở lần chạy đầu tiên (cần mạng).
 
 Quy ước dữ liệu dùng chung cho cả bốn mô hình:
+
 - Tập train gốc được chia phân tầng thành **54.000 train / 6.000 validation**; tập test giữ nguyên **10.000** ảnh.
 - Ảnh được làm phẳng thành vector 784 chiều và chuẩn hoá min-max (chia 255) về [0, 1].
 
@@ -200,8 +203,6 @@ Nhóm có sử dụng trợ lý AI để hỗ trợ: *(mô tả cụ thể phầ
 
 ## Tài liệu tham khảo
 
-- C. M. Bishop. Pattern Recognition and Machine Learning. Springer, 2006. Chương 4 (mô hình tuyến tính, softmax).
-- T. Hastie, R. Tibshirani, J. Friedman. The Elements of Statistical Learning, 2nd ed. Springer, 2009.
-- I. Goodfellow, Y. Bengio, A. Courville. Deep Learning. MIT Press, 2016.
-#   N h o m 8 _ N D M _ G K  
- 
+- C. M. Bishop. *Pattern Recognition and Machine Learning*. Springer, 2006. Chương 4 (mô hình tuyến tính, softmax).
+- T. Hastie, R. Tibshirani, J. Friedman. *The Elements of Statistical Learning*, 2nd ed. Springer, 2009.
+- I. Goodfellow, Y. Bengio, A. Courville. *Deep Learning*. MIT Press, 2016.
