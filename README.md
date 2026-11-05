@@ -203,3 +203,5 @@ Nhóm có sử dụng trợ lý AI để hỗ trợ: *(mô tả cụ thể phầ
 - C. M. Bishop. Pattern Recognition and Machine Learning. Springer, 2006. Chương 4 (mô hình tuyến tính, softmax).
 - T. Hastie, R. Tibshirani, J. Friedman. The Elements of Statistical Learning, 2nd ed. Springer, 2009.
 - I. Goodfellow, Y. Bengio, A. Courville. Deep Learning. MIT Press, 2016.
+#   N h o m 8 _ N D M _ G K  
+ 
