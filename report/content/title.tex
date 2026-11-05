@@ -1,0 +1,61 @@
+
+\begin{titlepage}
+    % Ve khung bia kep
+    \AddToShipoutPictureBG*{
+        \begin{tikzpicture}[remember picture, overlay]
+            % Khung ngoai
+            \draw[line width=1.5pt]
+                ([xshift=1.2cm,yshift=-1.2cm]current page.north west)
+                rectangle
+                ([xshift=-1.2cm,yshift=1.2cm]current page.south east);
+
+            % Khung trong
+            \draw[line width=0.5pt]
+                ([xshift=1.35cm,yshift=-1.35cm]current page.north west)
+                rectangle
+                ([xshift=-1.35cm,yshift=1.35cm]current page.south east);
+        \end{tikzpicture}
+    }
+    \centering
+    
+    % Ten truong va don vi
+    {\Large\textbf{ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH}}\\[0.3cm]
+    {\large\textbf{TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN}}\\[0.3cm]
+    {\large KHOA TOÁN - TIN HỌC}\\[0.5cm]
+
+    % Logo truong
+    \includegraphics[width=5cm]{img/hcmus-logo.png}\\[0.5cm]
+
+    % Duong ke tren
+    \rule{\textwidth}{1.2pt}\\[0.4cm]
+
+    % Tieu de bao cao
+    {\LARGE\bfseries\reporttitle}\\[0.6cm]
+
+    {\Large\bfseries Đề tài: \reportname}\\[0.4cm]
+
+    % Duong ke duoi
+    \rule{\textwidth}{1.2pt}\\[1cm]
+
+    % Thong tin mon hoc
+    {\large\textbf{MÔN HỌC}}\\[0.2cm]
+    {\large \coursename}\\[1.2cm]
+
+    % Thong tin sinh vien
+    \begin{minipage}{0.8\textwidth}
+        \raggedright
+        \large
+        \textbf{Sinh viên thực hiện:}\\[0.2cm]
+        \studentname
+    \end{minipage}
+
+    \vfill
+
+    % Thoi gian
+    {\large TP. Hồ Chí Minh, \today}
+
+    \vspace{1cm}
+
+\end{titlepage}
+
+	

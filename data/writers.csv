@@ -1,0 +1,31 @@
+writer_id,collector,date,hand,pen,consent,note
+W01,Giang,10/19/2026,Phai,but_bi,yes,
+W02,Giang,10/19/2026,Phai,but_bi,yes,
+W03,Giang,10/19/2026,Phai,but_bi,yes,
+W04,Giang,10/19/2026,Phai,but_bi,yes,
+W05,Giang,10/19/2026,Phai,but_bi,yes,
+W06,Giang,10/19/2026,Phai,but_bi,yes,
+W07,Giang,10/19/2026,Phai,but_bi,yes,
+W08,Giang,10/19/2026,Phai,but_bi,yes,1 o bi loi
+W09,Giang,10/19/2026,Phai,but_bi,yes,
+W10,Giang,10/19/2026,Phai,but_bi,yes,
+W11,Nhu,10/19/2026,Phai,but_bi,yes,
+W12,Nhu,10/19/2026,Phai,but_bi,yes,
+W13,Nhu,10/19/2026,Phai,but_bi,yes,
+W14,Nhu,10/19/2026,Phai,but_bi,yes,
+W15,Nhu,10/19/2026,Phai,but_bi,yes,
+W16,Nhu,10/19/2026,Phai,but_bi,yes,1 o bi loi
+W17,Nhu,10/19/2026,Phai,but_bi,yes,"1 o bi tran vien, 4 o khong ro chu"
+W18,Nhu,10/19/2026,Phai,but_bi,yes,
+W19,Nhu,10/19/2026,Phai,but_bi,yes,
+W20,Nhu,10/19/2026,Phai,khac:but_gel,yes,
+W21,Phu,10/19/2026,Trai,but_bi,yes,
+W22,Phu,10/19/2026,Phai,khac:but_nuoc,yes,
+W23,Phu,10/19/2026,Phai,khac:but_nuoc,yes,
+W24,Phu,10/19/2026,Phai,but_bi,yes,
+W25,Phu,10/19/2026,Trai,khac:but_nuoc,yes,6 o khong ro net
+W26,Phu,10/19/2026,Phai,but_bi,yes,1 o bi loi
+W27,Phu,10/19/2026,Phai,khac:but_nuoc,yes,1 o bi loi
+W28,Phu,10/19/2026,Phai,but_bi,yes,"1 o tran vien, 3 o bi loi"
+W29,Phu,10/19/2026,Phai,khac:but_gel,yes,
+W30,Phu,10/19/2026,Phai,khac:but_gel,yes,

@@ -1,0 +1,21 @@
+writer,row,col,reason
+W08,3,9,khong ro net
+W16,2,3,viet dam so
+W17,5,0,khong ro net
+W17,5,1,khong ro net
+W17,5,2,khong ro net
+W17,5,3,khong ro net
+W17,5,8,khong ro net
+W17,7,1,tran vien
+W25,3,9,khong ro net
+W25,4,2,khong ro net
+W25,4,3,khong ro net
+W25,4,5,khong ro net
+W25,7,7,viet nhu 1
+W25,7,9,viet nhu 1
+W26,4,8,gach xoa
+W27,9,1,viet sai
+W28,0,3,tran vien
+W28,5,3,gach xoa
+W28,7,5,gach xoa
+W28,8,9,gach xoa

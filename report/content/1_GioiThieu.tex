@@ -1,0 +1,31 @@
+\section{Giới thiệu}
+
+\subsection{Bài toán}
+Nhận dạng chữ số viết tay là một bài toán phân loại trong lĩnh vực
+học máy, với mục tiêu xác định chữ số tương ứng từ một hình ảnh đầu vào.
+Trong đồ án này, nhóm sử dụng bộ dữ liệu MNIST gồm 70.000 ảnh chữ số
+viết tay ở dạng ảnh xám có kích thước $28 \times 28$ pixel, thuộc 10
+lớp từ 0 đến 9. Dữ liệu được tiền xử lý và sử dụng để huấn luyện,
+đánh giá các mô hình phân loại.
+
+\subsection{Mục tiêu}
+Đồ án hướng đến việc xây dựng và đánh giá bốn mô hình phân loại gồm
+Multinomial Naive Bayes, Logistic Regression, Mạng nơ-ron nhiều lớp
+(MLP) và Random Forest. Nhóm tự cài đặt phần tính toán cốt lõi của
+các thuật toán theo yêu cầu, đồng thời đối chiếu kết quả với thư viện
+scikit-learn. Hiệu quả của các mô hình được đánh giá thông qua
+Accuracy, Precision, Recall, F1-score và Confusion Matrix, kết hợp
+so sánh thời gian huấn luyện, thời gian dự đoán và khả năng giải thích.
+
+\subsection{Đóng góp của nhóm}
+Trong phạm vi đồ án, nhóm thực hiện các công việc chính sau:
+\begin{itemize}
+    \item Xây dựng quy trình tiền xử lý dữ liệu MNIST và triển khai
+    bốn mô hình phân loại theo yêu cầu của đề tài.
+    \item Thiết kế các thí nghiệm đánh giá, khảo sát siêu tham số
+    và so sánh hiệu quả giữa các mô hình.
+    \item Xây dựng bộ mã nguồn, notebook tái tạo kết quả và báo cáo
+    thực nghiệm nhằm hỗ trợ kiểm chứng, phân tích kết quả.
+    \item Thu thập dữ liệu chữ số viết tay (3.000 mẫu từ 30 người viết khác nhau), thử nghiệm tăng cường dữ liệu (Xoay, dịch chuyển và làm nhiễu dữ liệu) và xây dựng chương trình demo bằng Gradio.
+    
+\end{itemize}

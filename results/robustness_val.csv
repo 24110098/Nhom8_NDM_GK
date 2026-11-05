@@ -1,0 +1,121 @@
+model,kind,level,acc
+Multinomial NB,rotate,0.0,0.8221666666666667
+Multinomial NB + aug,rotate,0.0,0.7953333333333333
+Logistic Regression,rotate,0.0,0.8461666666666666
+Logistic Regression + aug,rotate,0.0,0.8413333333333334
+MLP,rotate,0.0,0.9178333333333333
+MLP + aug,rotate,0.0,0.9473333333333334
+Random Forest,rotate,0.0,0.8788333333333334
+Random Forest + aug,rotate,0.0,0.881
+Multinomial NB,rotate,10.0,0.7688333333333334
+Multinomial NB + aug,rotate,10.0,0.7446666666666667
+Logistic Regression,rotate,10.0,0.7903333333333333
+Logistic Regression + aug,rotate,10.0,0.803
+MLP,rotate,10.0,0.9053333333333333
+MLP + aug,rotate,10.0,0.9285
+Random Forest,rotate,10.0,0.8275
+Random Forest + aug,rotate,10.0,0.863
+Multinomial NB,rotate,20.0,0.6286666666666667
+Multinomial NB + aug,rotate,20.0,0.6155
+Logistic Regression,rotate,20.0,0.6365
+Logistic Regression + aug,rotate,20.0,0.6913333333333334
+MLP,rotate,20.0,0.809
+MLP + aug,rotate,20.0,0.8638333333333333
+Random Forest,rotate,20.0,0.7168333333333333
+Random Forest + aug,rotate,20.0,0.7715
+Multinomial NB,rotate,30.0,0.4508333333333333
+Multinomial NB + aug,rotate,30.0,0.44583333333333336
+Logistic Regression,rotate,30.0,0.4573333333333333
+Logistic Regression + aug,rotate,30.0,0.5135
+MLP,rotate,30.0,0.6408333333333334
+MLP + aug,rotate,30.0,0.719
+Random Forest,rotate,30.0,0.5438333333333333
+Random Forest + aug,rotate,30.0,0.6186666666666667
+Multinomial NB,rotate,45.0,0.23183333333333334
+Multinomial NB + aug,rotate,45.0,0.23366666666666666
+Logistic Regression,rotate,45.0,0.27266666666666667
+Logistic Regression + aug,rotate,45.0,0.3065
+MLP,rotate,45.0,0.36733333333333335
+MLP + aug,rotate,45.0,0.419
+Random Forest,rotate,45.0,0.31783333333333336
+Random Forest + aug,rotate,45.0,0.3645
+Multinomial NB,shift,0.0,0.8221666666666667
+Multinomial NB + aug,shift,0.0,0.7953333333333333
+Logistic Regression,shift,0.0,0.8461666666666666
+Logistic Regression + aug,shift,0.0,0.8413333333333334
+MLP,shift,0.0,0.9178333333333333
+MLP + aug,shift,0.0,0.9473333333333334
+Random Forest,shift,0.0,0.8788333333333334
+Random Forest + aug,shift,0.0,0.881
+Multinomial NB,shift,1.0,0.679
+Multinomial NB + aug,shift,1.0,0.6768333333333333
+Logistic Regression,shift,1.0,0.6216666666666667
+Logistic Regression + aug,shift,1.0,0.7573333333333333
+MLP,shift,1.0,0.7271666666666666
+MLP + aug,shift,1.0,0.9253333333333333
+Random Forest,shift,1.0,0.6851666666666667
+Random Forest + aug,shift,1.0,0.7613333333333333
+Multinomial NB,shift,2.0,0.3085
+Multinomial NB + aug,shift,2.0,0.32183333333333336
+Logistic Regression,shift,2.0,0.2665
+Logistic Regression + aug,shift,2.0,0.483
+MLP,shift,2.0,0.3463333333333333
+MLP + aug,shift,2.0,0.8288333333333333
+Random Forest,shift,2.0,0.3055
+Random Forest + aug,shift,2.0,0.45666666666666667
+Multinomial NB,shift,3.0,0.129
+Multinomial NB + aug,shift,3.0,0.08833333333333333
+Logistic Regression,shift,3.0,0.07083333333333333
+Logistic Regression + aug,shift,3.0,0.191
+MLP,shift,3.0,0.13033333333333333
+MLP + aug,shift,3.0,0.5253333333333333
+Random Forest,shift,3.0,0.12716666666666668
+Random Forest + aug,shift,3.0,0.19183333333333333
+Multinomial NB,shift,4.0,0.05466666666666667
+Multinomial NB + aug,shift,4.0,0.019833333333333335
+Logistic Regression,shift,4.0,0.043833333333333335
+Logistic Regression + aug,shift,4.0,0.04933333333333333
+MLP,shift,4.0,0.06666666666666667
+MLP + aug,shift,4.0,0.171
+Random Forest,shift,4.0,0.0565
+Random Forest + aug,shift,4.0,0.06466666666666666
+Multinomial NB,noise,0.0,0.8221666666666667
+Multinomial NB + aug,noise,0.0,0.7953333333333333
+Logistic Regression,noise,0.0,0.8461666666666666
+Logistic Regression + aug,noise,0.0,0.8413333333333334
+MLP,noise,0.0,0.9178333333333333
+MLP + aug,noise,0.0,0.9473333333333334
+Random Forest,noise,0.0,0.8788333333333334
+Random Forest + aug,noise,0.0,0.881
+Multinomial NB,noise,0.1,0.7806666666666666
+Multinomial NB + aug,noise,0.1,0.8056666666666666
+Logistic Regression,noise,0.1,0.8375
+Logistic Regression + aug,noise,0.1,0.816
+MLP,noise,0.1,0.914
+MLP + aug,noise,0.1,0.9415
+Random Forest,noise,0.1,0.5608333333333333
+Random Forest + aug,noise,0.1,0.8131666666666667
+Multinomial NB,noise,0.2,0.609
+Multinomial NB + aug,noise,0.2,0.8005
+Logistic Regression,noise,0.2,0.817
+Logistic Regression + aug,noise,0.2,0.7806666666666666
+MLP,noise,0.2,0.901
+MLP + aug,noise,0.2,0.9288333333333333
+Random Forest,noise,0.2,0.4663333333333333
+Random Forest + aug,noise,0.2,0.5965
+Multinomial NB,noise,0.3,0.482
+Multinomial NB + aug,noise,0.3,0.7558333333333334
+Logistic Regression,noise,0.3,0.7658333333333334
+Logistic Regression + aug,noise,0.3,0.7163333333333334
+MLP,noise,0.3,0.861
+MLP + aug,noise,0.3,0.89
+Random Forest,noise,0.3,0.4058333333333333
+Random Forest + aug,noise,0.3,0.43233333333333335
+Multinomial NB,noise,0.5,0.302
+Multinomial NB + aug,noise,0.5,0.5643333333333334
+Logistic Regression,noise,0.5,0.6218333333333333
+Logistic Regression + aug,noise,0.5,0.5545
+MLP,noise,0.5,0.6666666666666666
+MLP + aug,noise,0.5,0.6906666666666667
+Random Forest,noise,0.5,0.30616666666666664
+Random Forest + aug,noise,0.5,0.29083333333333333

@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+
+% ============ 1. KHAI BÁO TẤT CẢ PACKAGE ============
+\usepackage{hcmus-report-template}
+% Các gói bổ trợ cho nội dung (Tránh lỗi Undefined control sequence hoặc thiếu định dạng bảng/thuật toán)
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{booktabs,multirow,array}
+\usepackage{graphicx}
+\usepackage{caption,subcaption}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+% ============ 2. CẤU HÌNH & TÙY CHỈNH ============
+% Disable indentation on new paragraphs
+\setlength{\parindent}{0pt}
+
+% Line spacing 1.5
+\renewcommand{\baselinestretch}{1.5}
+
+% Cấu hình caption và enumitem
+\captionsetup{font=small,labelfont=bf}
+\captionsetup[table]{position=top}
+\setlist{itemsep=2pt,topsep=3pt}
+
+% Định nghĩa macro toán học và code
+\newcommand{\code}[1]{\texttt{#1}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\R}{\mathbb{R}}
+
+
+% Define course name, report name and report title.
+\newcommand{\coursename}{Nhận Dạng Mẫu}
+\newcommand{\reportname}{Nhận dạng chữ số viết tay bằng các phương pháp phân lớp}
+\newcommand{\reporttitle}{Báo cáo Đồ Án Giữa Kỳ}
+
+\newcommand{\studentname}{Nguyễn Thị Huệ Giang (24110014)\\Lâm Hà Quỳnh Như (24110043)\\Hồ Việt Thuận Phú (24110098)}
+
+% Header
+\lhead{\reporttitle}
+\rhead{%
+Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
+\coursename
+}
+
+% Footer
+\newcommand{\leftfooter}{\LaTeX\ by Nhóm 8}
+\lfoot{\leftfooter}
+
+% ============ 3. NỘI DUNG CHÍNH (DOCUMENT) ============
+\begin{document}
+
+\pagenumbering{roman}
+\input{content/title.tex}
+
+\tableofcontents
+\pagebreak
+\listoftables
+\pagebreak
+\listoffigures
+\pagebreak
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{content/1_GioiThieu}
+\input{content/2_Data}
+\input{content/3_MNB}
+\input{content/3_RDF}
+\input{content/3_LR}
+\input{content/3_MLP}
+\input{content/4_ThiNghiem}
+\input{content/5_KetQua}
+\input{content/6_ThaoLuan}
+\input{content/7_TN_morong}
+\input{content/8_KL}
+
+% References
+\input{ref/ref.tex}
+
+% Appendix
+\appendix
+% Add \cleardoublepage to move appendices to next page.
+\input{appendix/appendix.tex}
+
+\end{document}

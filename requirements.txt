@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn      # chỉ để đối chiếu; khi import dùng tên "sklearn"
+opencv-python     # xử lý ảnh phiếu chữ viết
+Pillow
+gradio            # demo
+torch             # tuỳ chọn: chỉ dùng ở ô đối chiếu MLP bằng PyTorch (mục 5.4)

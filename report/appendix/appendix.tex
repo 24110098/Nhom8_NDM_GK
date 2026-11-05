@@ -1,0 +1,81 @@
+
+\section{Phân công công việc và khai báo sử dụng AI}
+
+\subsection{Bảng phân công công việc và tỷ lệ đóng góp}
+
+Bảng dưới đây trình bày nhiệm vụ được phân công và tỷ lệ
+đóng góp của từng thành viên trong quá trình thực hiện đề tài.
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{
+        |>{\centering\arraybackslash}p{0.8cm}
+        |p{3cm}
+        |p{7cm}
+        |>{\centering\arraybackslash}p{2cm}|
+    }
+        \hline
+        \textbf{STT} &
+        \textbf{Thành viên} &
+        \textbf{Công việc thực hiện} &
+        \textbf{Đóng góp (\%)} \\
+        \hline
+        1 & Nguyễn Thị Huệ Giang & Xây dựng phương pháp Multinomial NB, Random Forest, thu thập và xử lý phiếu chữ viết tay & 100\% \\
+        \hline
+        2 & Lâm Hà Quỳnh Như & Tải, tiền xử lý, chia tập dữ liệu, xây dựng phương pháp MLP, thu thập và xử lý phiếu chữ viết tay& 100\% \\
+        \hline
+        3 & Hồ Việt Thuận Phú & Logistic Regression, thí nghiệm độ bền (augmentation),tạo tập dữ liệu Việt, xây dựng khung demo, thực hiện các đánh giá & 100\% \\
+        \hline
+        \multicolumn{3}{|r|}{\textbf{Tổng cộng}} &
+        \textbf{100\%} \\
+        \hline
+    \end{tabular}
+    \caption{Phân công công việc và tỷ lệ đóng góp của các thành viên.}
+    \label{tab:phan-cong}
+\end{table}
+
+\subsection{Khai báo sử dụng trí tuệ nhân tạo (AI)}
+
+Trong quá trình thực hiện đề tài, nhóm có sử dụng công cụ
+trí tuệ nhân tạo (AI) để hỗ trợ giải thích thuật toán, tham
+khảo cách triển khai chương trình, phát hiện và sửa lỗi
+mã nguồn, cũng như chỉnh sửa nội dung báo cáo.
+
+Các kết quả do AI đề xuất được nhóm xem xét, kiểm tra và
+điều chỉnh trước khi sử dụng. Nhóm chịu trách nhiệm về
+tính chính xác của nội dung, mã nguồn và kết quả thực nghiệm
+được trình bày trong báo cáo.
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{
+        |p{3.5cm}
+        |p{5cm}
+        |p{5cm}|
+    }
+        \hline
+        \textbf{Công cụ AI} &
+        \textbf{Mục đích sử dụng} &
+        \textbf{Phạm vi sử dụng} \\
+        \hline
+        ChatGPT &
+        Hỗ trợ giải thích, gợi ý mã nguồn và sửa lỗi báo cáo&
+        Tham khảo trong quá trình viết báo cáo \\
+        \hline
+        Claude &
+        \textbullet~Soạn tài liệu hướng dẫn: kiến thức nền, công thức, ví dụ tính tay \newline
+        \textbullet~Gợi ý mã nguồn khung: \texttt{metrics.py}, \texttt{vn\_digits.py}, \texttt{experiments.py}, \texttt{app.py}, notebook \texttt{main.ipynb} \newline
+        \textbullet~Thiết kế phiếu thu thập chữ số viết tay \newline
+        \textbullet~Giải thích và sửa lỗi khi chạy \newline &
+        \textbullet~Giải thích thuật toán và cách kiểm chứng (gradient check, đối chiếu scikit-learn) \newline
+        \textbullet~Rà soát code nhóm tự viết \newline \\
+        \hline
+    \end{tabular}
+    \caption{Khai báo công cụ AI được sử dụng trong đề tài.}
+    \label{tab:khai-bao-ai}
+\end{table}
+

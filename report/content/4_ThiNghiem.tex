@@ -1,0 +1,32 @@
+% =====================================================================
+\section{Thí nghiệm}\label{sec:exp}
+% =====================================================================
+ 
+\paragraph{Dữ liệu.} MNIST gồm 60\,000 ảnh train và 10\,000 ảnh test; các lớp gần cân bằng (ít nhất 5\,421 ảnh chữ số 5, nhiều nhất 6\,742 ảnh chữ số 1 trong tập train). Tập train được chia \emph{phân tầng} theo lớp thành 54\,000 ảnh huấn luyện và 6\,000 ảnh validation (hạt giống 42). Pixel được chia 255 (min-max về $[0,1]$), lưu \code{float32}. Mọi siêu tham số được chọn trên validation; tập test chỉ được đánh giá \textbf{một lần} sau khi đã chốt cấu hình (cờ \code{RUN\_TEST}), mỗi mô hình được huấn luyện lại trên 54\,000 ảnh với cấu hình cuối.
+ 
+\paragraph{Môi trường.} Python 3.14.5, NumPy 2.5.4, SciPy 1.18.1, pandas 3.0.6, Matplotlib 3.11.2 trên Windows; CPU/RAM: \todo{điền cấu hình máy}. Cả bốn bộ phân lớp tự cài bằng NumPy; scikit-learn 1.9.1 và PyTorch \todo{phiên bản} chỉ dùng để đối chiếu. Toàn bộ kết quả tái tạo được bằng \emph{Restart \& Run All} trên \code{main.ipynb}.
+ 
+\paragraph{Bốn bộ phân lớp và quy trình chọn siêu tham số.} Bảng~\ref{tab:hparams} tóm tắt không gian tìm kiếm và giá trị được chọn. Với các mô hình có ngẫu nhiên khi huấn luyện (Logistic Regression, MLP), mỗi cấu hình chạy với 3 hạt giống $\{0,1,2\}$ và so sánh trung bình $\pm$ độ lệch chuẩn accuracy validation.
+\begin{itemize}
+\item \textbf{Multinomial NB}: quét $\alpha$ trên lưới log; không có ngẫu nhiên nên chạy một lần mỗi giá trị.
+\item \textbf{Logistic Regression} (softmax, mini-batch GD, cross-entropy $+\frac\lambda2\|W\|^2$): quét learning rate $\eta$, cố định $\lambda=10^{-4}$, 20 epoch, batch 128. Gradient giải tích được kiểm tra bằng sai phân trung tâm (sai số tương đối lớn nhất $4.9\times10^{-7}<10^{-6}$).
+\item \textbf{MLP} (ReLU, softmax, SGD momentum 0.9, khởi tạo He, batch 128, tối đa 15 epoch, dừng sớm khi val accuracy không tăng sau 3 epoch và khôi phục trọng số tốt nhất): quét kiến trúc với $\eta=0.05$. Lan truyền ngược được kiểm tra bằng ví dụ tính tay mạng 2--2--2.
+\item \textbf{Random Forest}: \code{max\_depth}$=15$, \code{min\_samples\_leaf}$=1$, \code{max\_features}$=\sqrt{D}$, soft voting được cố định trước vì một cây mất khoảng 9\,s huấn luyện trên 54\,000 ảnh; chỉ quét số cây $T$. Đường accuracy theo $T$ lấy từ \emph{một} rừng 50 cây bằng cách cộng dồn xác suất của $k$ cây đầu, không cần huấn luyện lại. OOB score được dùng như ước lượng độc lập thứ hai.
+\end{itemize}
+ 
+\begin{table}[H]
+\centering\small
+\caption{Siêu tham số: không gian tìm kiếm trên validation và giá trị chọn.}\label{tab:hparams}
+\begin{tabular}{@{}l l >{\raggedright\arraybackslash}p{5.6cm} l@{}}
+\toprule
+Mô hình & Siêu tham số quét & Giá trị thử & Chọn \\
+\midrule
+Multinomial NB & $\alpha$ & $10^{-3},10^{-2},10^{-1},1,10,100$ & $10^{-3}$ \\
+Logistic Regression & learning rate $\eta$ ($\times$3 seed) & $10^{-3},10^{-2},10^{-1},1$ & $0.1$ \\
+MLP & kiến trúc ($\times$3 seed) & 784-32-10, 784-128-10, 784-512-10, 784-256-128-10 & 784-256-128-10 \\
+Random Forest & số cây $T$ & $1,2,5,10,20,30,50$ & 50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+\paragraph{Thước đo.} Accuracy và macro-F1 (trung bình F1 của 10 lớp) trên train, validation, test; confusion matrix và recall từng lớp trên test; thời gian dự đoán trung bình mỗi ảnh.
